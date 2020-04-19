@@ -12,7 +12,7 @@ node{
         sh 'sudo docker-compose up -d'
     }
     
-    stage('Push Docker Image to HUB')
+    stage('Push Docker Image to Docker hub')
     {
         sh 'sudo docker push iamdevopstrainer/deployapp_web'
     }
